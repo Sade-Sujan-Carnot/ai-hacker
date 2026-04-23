@@ -1,0 +1,33 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup C++
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake g++ libcurl4-openssl-dev libjsoncpp-dev
+    
+    - name: Build Backend
+      run: |
+        cd backend
+        mkdir build
+        cd build
+        cmake ..
+        cmake --build . --config Release
+    
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./

@@ -1,0 +1,56 @@
+# Build directories
+build/
+bin/
+obj/
+Debug/
+Release/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.sln
+*.vcxproj*
+*.user
+
+# Dependencies
+vcpkg/
+vcpkg_installed/
+node_modules/
+
+# Compiled output
+*.exe
+*.dll
+*.o
+*.a
+*.so
+*.dylib
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Cache
+__pycache__/
+*.pyc
+*.pyo
+.cache/
+
+# Node
+npm-debug.log
+yarn-error.log
+
+# IDE
+.vscode/settings.json
+.vscode/launch.json

@@ -1,0 +1,30 @@
+{
+  "name": "weather-api-free",
+  "version": "1.0.0",
+  "description": "Free Weather API with C++ Backend - No API Key Required",
+  "main": "backend/main.cpp",
+  "scripts": {
+    "build": "cd backend && build.bat",
+    "start": "cd backend && run.bat",
+    "dev": "cd backend && run.bat & python -m http.server 3000"
+  },
+  "keywords": [
+    "weather",
+    "api",
+    "free",
+    "cpp",
+    "nodejs",
+    "open-meteo",
+    "hyderabad"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/weather-app-free-api.git"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/weather-app-free-api#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

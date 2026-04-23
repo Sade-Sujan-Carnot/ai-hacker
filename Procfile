@@ -1,0 +1,1 @@
+web: cd backend/build/Release && ./weather_server
